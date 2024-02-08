@@ -1,0 +1,45 @@
+@import "../../styles/theme.scss";
+
+.leaderBoard {
+  width: 480px;
+  border-radius: 12px;
+
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.boardHeader {
+  padding: 48px;
+
+  background-color: $colors-accent;
+}
+
+.boardTitle {
+  text-align: right;
+  font-size: $fontSizes-large;
+  font-weight: 700;
+  color: $colors-white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titleTop {
+  display: block;
+  letter-spacing: 6.4px;
+}
+
+.titleBottom {
+  font-size: $fontSizes-small;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+}
+
+.leaderBoardProfiles {
+  background-color: $colors-white;
+  border-radius: 0 0 12px;
+
+  padding: 12px 20px;
+
+  display: grid;
+  row-gap: 8px;
+}

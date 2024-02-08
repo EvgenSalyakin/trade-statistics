@@ -1,0 +1,53 @@
+@import "../../styles/theme.scss";
+
+.forbesItem {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+
+  padding: 10px 30px 10px 10px;
+  overflow: hidden;
+  border-radius: 10px;
+
+  box-shadow: $shadows-medium;
+  cursor: pointer;
+
+  transition-property: transform, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: $animation-cubicBezier;
+
+  background-color: $colors-white;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: $shadows-small;
+  }
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 50%;
+
+  box-shadow: $shadows-regular;
+}
+
+.name {
+  color: $colors-gray;
+  font-weight: 600;
+  font-size: $fontSizes-large;
+  letter-spacing: 1px;
+
+  margin-left: 2px;
+  margin-bottom: 0;
+}
+
+.capital {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: $colors-accent;
+  font-weight: 700;
+
+  font-size: 24px;
+}

@@ -6,3 +6,5 @@ export * from "components/ProfileCard/ProfileCard";
 export * from "components/Statistics/Statistics";
 export * from "components/StatisticItem/StatisticItem";
 export * from "components/ProfileList/ProfileList";
+export * from "components/ProfileListItem/ProfileListItem";
+export * from "components/CryptoHistory/CryptoHistory";

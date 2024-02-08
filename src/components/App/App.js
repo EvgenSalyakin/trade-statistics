@@ -4,6 +4,8 @@ import {
   Section,
   ProfileCard,
   Statistics,
+  ProfileList,
+  CryptoHistory,
 } from "components";
 import card from "data/card.json";
 import stats from "data/stats.json";

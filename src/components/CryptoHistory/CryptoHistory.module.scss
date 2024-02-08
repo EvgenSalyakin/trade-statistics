@@ -1,0 +1,35 @@
+@import "../../styles/theme.scss";
+
+.baseTable {
+  width: 100%;
+  border-collapse: collapse;
+
+  background-color: $colors-white;
+  text-align: center;
+
+  box-shadow: $shadows-small;
+}
+
+.tHead {
+  color: $colors-white;
+  background-color: $colors-accent;
+  text-transform: uppercase;
+}
+
+.td {
+  padding: 10px;
+  border: 1px solid $colors-gray;
+  color: $colors-dark;
+}
+
+.th {
+  padding: 10px;
+  border: 1px solid $colors-gray;
+  color: $colors-white;
+}
+
+.tr {
+  &:nth-of-type(odd) {
+    background-color: $colors-light;
+  }
+}
