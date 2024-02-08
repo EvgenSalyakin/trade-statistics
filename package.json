@@ -2,6 +2,7 @@
   "name": "trade-statistics",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://EvgenSalyakin.github.io/trade-statistics/",
   "dependencies": {
     "date-fns": "^3.3.1",
     "modern-normalize": "^2.0.0",
