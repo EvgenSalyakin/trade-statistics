@@ -1,5 +1,14 @@
-import { Heading, Container, Section, ProfileCard } from "components";
+import {
+  Heading,
+  Container,
+  Section,
+  ProfileCard,
+  Statistics,
+} from "components";
 import card from "data/card.json";
+import stats from "data/stats.json";
+import profiles from "data/list.json";
+import transactions from "data/transactions.json";
 
 export const App = () => {
   return (
@@ -13,14 +22,17 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
+        <Statistics title="Main statistics" stats={stats} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
+        <ProfileList list={profiles} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
         </Heading>
+        <CryptoHistory transactions={transactions} />
       </Container>
     </Section>
   );

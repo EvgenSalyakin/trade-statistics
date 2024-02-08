@@ -1,0 +1,15 @@
+@import "../../styles/theme.scss";
+
+.statisticTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: $colors-dark;
+  text-align: center;
+}
+
+.statisticsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

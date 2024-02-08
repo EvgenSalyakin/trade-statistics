@@ -19,10 +19,10 @@ export const CardPoster = (props) => {
   return <img className={styles.cardPoster} {...props} />;
 };
 export const CardText = ({ children }) => {
-  return <p className={styles.CardText}>{children}</p>;
+  return <p className={styles.cardText}>{children}</p>;
 };
 export const CardTitle = ({ children }) => {
-  return <h2 className={styles.CardTitle}>{children}</h2>;
+  return <h2 className={styles.cardTitle}>{children}</h2>;
 };
 export const Tag = ({ children }) => {
   return <span className={styles.tag}>{children}</span>;

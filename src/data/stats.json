@@ -1,0 +1,7 @@
+[
+  { "id": 1, "title": "Loss", "total": 1 },
+  { "id": 2, "title": "Zero", "total": 4 },
+  { "id": 3, "title": "Min", "total": 12 },
+  { "id": 4, "title": "Average", "total": 5 },
+  { "id": 5, "title": "Max", "total": 2 }
+]
