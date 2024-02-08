@@ -27,7 +27,10 @@ export const ProfileCard = ({
   return (
     <Card>
       <CardHeader>
-        <CardPoster src={poster} alt={tag} />
+        <CardPoster
+          src={process.env.PUBLIC_URL + "/images/" + poster}
+          alt={tag}
+        />
       </CardHeader>
       <CardBody>
         <Tag>{tag}</Tag>
