@@ -1,7 +1,7 @@
 import styles from "./ProfileCard.module.scss";
 
-export const Avatar = (props) => {
-  return <img className={styles.avatar} {...props} />;
+export const Avatar = ({ src, alt }) => {
+  return <img className={styles.avatar} src={src} alt={alt} />;
 };
 export const Card = ({ children }) => {
   return <div className={styles.card}>{children}</div>;
@@ -15,8 +15,8 @@ export const CardFooter = ({ children }) => {
 export const CardHeader = ({ children }) => {
   return <div className={styles.cardHeader}>{children}</div>;
 };
-export const CardPoster = (props) => {
-  return <img className={styles.cardPoster} {...props} />;
+export const CardPoster = ({ src, alt }) => {
+  return <img className={styles.cardPoster} src={src} alt={alt} />;
 };
 export const CardText = ({ children }) => {
   return <p className={styles.cardText}>{children}</p>;

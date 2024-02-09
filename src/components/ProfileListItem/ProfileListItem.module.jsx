@@ -10,6 +10,6 @@ export const Capital = ({ children }) => {
   return <span className={styles.capital}>{children}</span>;
 };
 
-export const Avatar = (props) => {
-  return <img className={styles.avatar} {...props} />;
+export const Avatar = ({ src, alt }) => {
+  return <img className={styles.avatar} src={src} alt={alt} />;
 };
