@@ -5,12 +5,12 @@ export const CryptoHistory = ({ transactions }) => {
   return (
     <BaseTable>
       <THead>
-        <tr>
+        <Tr>
           <Th>№</Th>
           <Th>PRICE</Th>
           <Th>AMOUNT</Th>
           <Th>DATE</Th>
-        </tr>
+        </Tr>
       </THead>
 
       <tbody>
