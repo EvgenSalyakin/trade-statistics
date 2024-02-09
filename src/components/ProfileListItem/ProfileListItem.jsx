@@ -14,7 +14,7 @@ export const ProfileListItem = ({
       <Avatar src={process.env.PUBLIC_URL + "/images/" + image} alt={title} />
       <Name>{title}</Name>
       <Capital>
-        {profitability} {console.log(variables.colors_accent)}
+        {profitability}
         <BiDollarCircle color={variables.colors_accent} size={22} />
         {isIncrease ? <FcBullish /> : <FcBearish />}
       </Capital>
