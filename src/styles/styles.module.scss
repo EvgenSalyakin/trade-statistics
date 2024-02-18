@@ -1,0 +1,71 @@
+@import "./theme.scss";
+
+.container {
+  max-width: 1200px;
+  padding-left: 20;
+  padding-right: 20;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  font-size: $fontSizes-large;
+  font-weight: 700;
+  color: $colors-dark;
+  text-shadow: 1px 1px 2px $colors-gray;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+
+    width: 50%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $colors-gray;
+  }
+}
+
+.section {
+  padding-top: 80;
+  padding-bottom: 80;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  background-color: $colors-white;
+  text-align: center;
+
+  box-shadow: $shadows-small;
+}
+
+.tHead {
+  color: $colors-white;
+  background-color: $colors-accent;
+  text-transform: uppercase;
+}
+
+.td {
+  padding: 10px;
+  border: 1px solid $colors-gray;
+  color: $colors-dark;
+}
+
+.th {
+  padding: 10px;
+  border: 1px solid $colors-gray;
+  color: $colors-white;
+}
+
+.tr {
+  &:nth-of-type(odd) {
+    background-color: $colors-light;
+  }
+}

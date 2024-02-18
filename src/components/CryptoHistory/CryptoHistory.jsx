@@ -1,5 +1,5 @@
 import { formatDate } from "helpers/format-date";
-import { BaseTable, THead, Th, Tr, Td } from "./CryptoHistory.module";
+import { BaseTable, THead, Th, Tr, Td } from "components";
 
 export const CryptoHistory = ({ transactions }) => {
   return (
