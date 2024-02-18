@@ -1,7 +1,8 @@
-import { ForbesItem, Avatar, Name, Capital } from "./ProfileListItem.module";
+import { ForbesItem, Name, Capital } from "./ProfileListItem.module";
 import { BiDollarCircle } from "react-icons/bi";
 import { FcBullish, FcBearish } from "react-icons/fc";
 import variables from "../../styles/theme.scss";
+import { Avatar } from "components";
 
 export const ProfileListItem = ({
   title,

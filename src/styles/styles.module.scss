@@ -52,6 +52,10 @@
   text-transform: uppercase;
 }
 
+.tBody {
+  color: $colors-light;
+}
+
 .td {
   padding: 10px;
   border: 1px solid $colors-gray;
@@ -61,11 +65,26 @@
 .th {
   padding: 10px;
   border: 1px solid $colors-gray;
-  color: $colors-white;
+  color: $colors-dark;
 }
 
 .tr {
   &:nth-of-type(odd) {
     background-color: $colors-light;
   }
+}
+
+.avatar {
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: $shadows-regular;
+}
+
+.poster {
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

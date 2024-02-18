@@ -39,22 +39,57 @@ export const Section = ({ children, ...props }) => {
 };
 
 export const BaseTable = ({ children, ...props }) => {
-    return <table className={styles.table} {...props}>{children}</table>;
-  };
-  
-  export const THead = ({ children, ...props }) => {
-    return <thead className={styles.tHead} {...props}>{children}</thead>;
-  };
-  
-  export const Td = ({ children, ...props }) => {
-    return <td className={styles.td} {...props}>{children}</td>;
-  };
-  
-  export const Th = ({ children, ...props }) => {
-    return <th className={styles.th} {...props}>{children}</th>;
-  };
-  
-  export const Tr = ({ children, ...props }) => {
-    return <tr className={styles.tr} {...props}>{children}</tr>;
-  };
-  
+  return (
+    <table className={styles.table} {...props}>
+      {children}
+    </table>
+  );
+};
+
+export const THead = ({ children, ...props }) => {
+  return (
+    <thead className={styles.tHead} {...props}>
+      {children}
+    </thead>
+  );
+};
+
+export const Td = ({ children, ...props }) => {
+  return (
+    <td className={styles.td} {...props}>
+      {children}
+    </td>
+  );
+};
+
+export const Th = ({ children, ...props }) => {
+  return (
+    <th className={styles.th} {...props}>
+      {children}
+    </th>
+  );
+};
+
+export const Tr = ({ children, ...props }) => {
+  return (
+    <tr className={styles.tr} {...props}>
+      {children}
+    </tr>
+  );
+};
+
+export const TBody = ({ children, ...props }) => {
+  return (
+    <tbody className={styles.tBody} {...props}>
+      {children}
+    </tbody>
+  );
+};
+
+export const Avatar = ({ src, alt, ...props }) => {
+  return <img className={styles.avatar} src={src} alt={alt} {...props} />;
+};
+
+export const Poster = ({ src, alt, ...props }) => {
+  return <img className={styles.poster} src={src} alt={alt} {...props} />;
+};

@@ -1,11 +1,9 @@
 import { formatDateToNow } from "helpers/format-date";
 import {
-  Avatar,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
-  CardPoster,
   CardText,
   CardTitle,
   Date,
@@ -14,6 +12,7 @@ import {
   UserInfo,
   UserName,
 } from "./ProfileCard.module";
+import { Avatar, Poster } from "components";
 
 export const ProfileCard = ({
   name,
@@ -27,10 +26,7 @@ export const ProfileCard = ({
   return (
     <Card>
       <CardHeader>
-        <CardPoster
-          src={process.env.PUBLIC_URL + "/images/" + poster}
-          alt={tag}
-        />
+        <Poster src={process.env.PUBLIC_URL + "/images/" + poster} alt={tag} />
       </CardHeader>
       <CardBody>
         <Tag>{tag}</Tag>
