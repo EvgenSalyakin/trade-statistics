@@ -10,12 +10,10 @@ export class CoinInfo extends Component {
   componentDidMount() {}
 
   coinPrice = async () => {
-    const price = await coinPriceAPI(this.state.coin + "USDT");
+    const price = await coinPriceAPI(this.state.coin);
     //console.log(price);
     this.setState({ price });
   };
-
-  componentDidUpdate() {}
 
   handleSubmit = (e) => {
     e.preventDefault();

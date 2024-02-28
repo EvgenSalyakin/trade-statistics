@@ -7,5 +7,6 @@ export * from "components/ProfileListItem/ProfileListItem";
 export * from "components/CryptoHistory/CryptoHistory";
 export * from "components/CryptoContainer/CryptoContainer";
 export * from "components/CoinInfo/CoinInfo";
+export * from "components/BinanceForm/BinanceForm";
 
 export * from "../styles/styles.module";

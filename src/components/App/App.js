@@ -1,5 +1,4 @@
 import {
-  Heading,
   Container,
   Section,
   ProfileCard,
@@ -8,51 +7,51 @@ import {
   CryptoHistory,
   CryptoContainer,
   CoinInfo,
+  BinanceForm,
 } from "components";
 import card from "data/card.json";
 import stats from "data/stats.json";
 import profiles from "data/list.json";
 import transactions from "data/transactions.json";
-import { Component } from "react";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 export const App = () => {
   return (
     <Section>
       <Container>
-        <Heading marginBottom="50px" textAlign="center">
-          Task 1
-        </Heading>
-        <CryptoContainer />
-
-        <Heading marginBottom="50px" textAlign="center">
-          Task 2
-        </Heading>
-        <CoinInfo />
-
-        <Heading marginBottom="50px" textAlign="center">
-          Task 3
-        </Heading>
-        <p>Under development</p>
-
-        <Heading marginBottom="50px" textAlign="center">
-          Task 4
-        </Heading>
-        <ProfileCard {...card} />
-
-        <Heading marginTop="50px" marginBottom="50px" textAlign="center">
-          Task 5
-        </Heading>
-        <Statistics title="Main statistics" stats={stats} />
-
-        <Heading marginTop="50px" marginBottom="50px" textAlign="center">
-          Task 6
-        </Heading>
-        <ProfileList list={profiles} />
-
-        <Heading marginTop="50px" marginBottom="50px" textAlign="center">
-          Task 7
-        </Heading>
-        <CryptoHistory transactions={transactions} />
+        <Tabs>
+          <TabList>
+            <Tab>Crypto coingecko</Tab>
+            <Tab>Binance market</Tab>
+            <Tab>Binance form</Tab>
+            <Tab>Profile .csv</Tab>
+            <Tab>Card</Tab>
+            <Tab>List</Tab>
+            <Tab>Statistics</Tab>
+          </TabList>
+          <TabPanel>
+            <CryptoContainer />
+          </TabPanel>
+          <TabPanel>
+            <CoinInfo />
+          </TabPanel>
+          <TabPanel>
+            <BinanceForm />
+          </TabPanel>
+          <TabPanel>
+            <ProfileCard {...card} />
+          </TabPanel>
+          <TabPanel>
+            <Statistics title="Main statistics" stats={stats} />
+          </TabPanel>
+          <TabPanel>
+            <ProfileList list={profiles} />
+          </TabPanel>
+          <TabPanel>
+            <CryptoHistory transactions={transactions} />
+          </TabPanel>
+        </Tabs>
       </Container>
     </Section>
   );
